@@ -1,0 +1,20 @@
+<html>
+  <body>
+  <style>
+      div.list {
+          font-size: 16px;
+          line-height: 20px;
+      }
+  </style>
+  <div class="list">
+    {% for resource in resources %}
+      {{ loop.index	}}. <a href='/qvod/play?key={{ resource.key.id() }}'>{{ resource.title }}</a> <br />
+    {% endfor %}
+  </div>
+  <div class="page">
+    <a href="/qvod?page={{ page - 1 }}"> 上一页</a>
+    第{{ page }}页
+    <a href="/qvod?page={{ page + 1 }}"> 下一页</a>
+  </div>
+  </body>
+</html>

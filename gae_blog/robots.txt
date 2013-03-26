@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /album
+Disallow: /album/
+Disallow: /showimage/
+Disallow: /webbug

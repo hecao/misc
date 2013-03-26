@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body>
+<div class="content">
+    {% for p in plist %}
+        {{p}}
+        {% if not loop_last %}<hr />{% endif %}
+    {% endfor %}
+</div>
+<div class="page">
+    <a href="/s8/p/{{pid}}/{{page-1}}"> 上一页</a>
+    第{{ page }}页
+    <a href="/s8/p/{{pid}}/{{page+1}}"> 下一页</a>
+</div>
+</body>
+</html>

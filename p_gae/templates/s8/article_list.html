@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <style>
+      div.list {
+          font-size: 16px;
+          line-height: 20px;
+      }
+  </style>
+  <div class="list">
+    {% for article in alist %}
+      {{ loop.index	}}. <a href='/s8/p/{{article.pid}}/1'>{{ article.title }}</a> <br />
+    {% endfor %}
+  </div>
+  <div class="page">
+    <a href="/s8/b/{{bid}}/{{page-1}}"> 上一页</a>
+    第{{ page }}页
+    <a href="/s8/b/{{bid}}/{{page+1}}"> 下一页</a>
+  </div>
+  </body>
+</html>
