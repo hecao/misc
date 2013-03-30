@@ -1,0 +1,8 @@
+*.pyc
+.idea/
+*.class
+.settings/
+.project
+.classpath
+push_server/push_serverside/target/
+push_server/push_clientside/target/

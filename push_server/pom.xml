@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.dongliu</groupId>
+	<artifactId>push_server</artifactId>
+    <packaging>pom</packaging>
+	<version>0.1-SNAPSHOT</version>
+	<name>push project</name>
+
+	<repositories>
+		<repository>
+			<id>codehaus</id>
+			<url>http://repository.codehaus.org/org/codehaus</url>
+		</repository>
+	</repositories>
+
+    <modules>
+        <module>push_serverside</module>
+        <module>push_clientside</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+        <maven.compile.encoding>UTF-8</maven.compile.encoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+</project>
