@@ -45,7 +45,11 @@ def get_alltags():
 
 
 def get_recent_comments():
-    return Comment.get_commentlist(0, Config()["recentcommentnum"])
+    comment_list =  Comment.get_commentlist(0, Config()["recentcommentnum"])
+    for comment in comment_list:
+        if len(comment.content) > 50:
+            comment.content = comment.content[0:48] + '...'
+    return comment_list
 
 
 def get_fortune():

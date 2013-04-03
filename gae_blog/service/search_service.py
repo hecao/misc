@@ -12,7 +12,7 @@ class SearchService(object):
         content = post.content
         document = search.Document(
             doc_id=str(post.key.id()),
-            languag='zh',
+            language='zh',
             fields=[search.TextField(name='title', value=post.title),
                     search.HtmlField(name='content', value=content),
                     search.AtomField(name='author', value=post.author.nickname()),
