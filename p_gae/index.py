@@ -11,9 +11,6 @@ class MainPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([('/', MainPage),
-                            ('/crawl/s8/qvod', s8.QvodCrawler),
-                            ('/qvod', qvod.QvodList),
-                            ('/qvod/play', qvod.QvodPlay),
                             ('/s8/b/(\d+)/(\d+)', sarticle.ArticleList),
                             ('/s8/p/(\d+)/(\d+)', sarticle.Article),
                             ('/s8', sarticle.Index),

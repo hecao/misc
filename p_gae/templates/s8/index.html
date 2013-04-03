@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<style>
-    div.list {
-        font-size: 16px;
-        line-height: 20px;
-    }
-</style>
 <div class="list">
     {% for b in blist %}
-    <a href='/s8/b/{{b.bid}}/1'>{{b.name}}</a> <br />
+    <a href='/s8/b/{{b.bid}}/1?t={{b.t}}'>{{b.name}}</a> <br />
     {% endfor %}
 </div>
 </body>

@@ -1,4 +1,1 @@
 cron:
-- description: qvod crawler
-  url: /crawl/s8/qvod
-  schedule: every 1 hours synchronized
